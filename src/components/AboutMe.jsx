@@ -1,4 +1,5 @@
 import React from 'react'
+import AboutMeImage from '../images/Screenshot_2023-11-13-10-18-10-560_com.miui.gallery.jpg'
 
 export default function AboutMe() {
   return (
@@ -28,7 +29,7 @@ export default function AboutMe() {
         </div>
         </div>
         <div className='imgContainer-aboutMe'>
-            <img src="src\images\Screenshot_2023-11-13-10-18-10-560_com.miui.gallery.jpg" alt="" />
+            <img src={aboutMeImage} alt="" />
 
         </div>
     </div>
