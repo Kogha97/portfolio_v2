@@ -1,0 +1,340 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+
+}
+:root{
+  --gradiantColor : linear-gradient(to right, rgb(67,124,205), rgb(69, 214, 202));
+  --background-color: rgb(22, 22, 56);
+  
+}
+#root{
+  background-color: var(--background-color); 
+  color: whitesmoke;
+  max-width: 100dvw;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Navbar css */
+.navbar{
+  height: 7dvh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar ul li, .navbar ul li a{
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: whitesmoke;
+}
+.navbar ul li:hover{
+  cursor: pointer;
+  background: var(--gradiantColor);
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-fill-color: transparent;
+  transition: 1s ease;
+}
+.navbar ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 40px;
+  text-decoration: none;
+  list-style: none;
+  margin: 0px 40px 0px 0px;
+}
+
+.navbar {
+  position: fixed; /* Fixed or absolute depending on your layout */
+  width: 100%;
+  background-color: transparent;
+  transition: top 0.3s ease-in-out;
+}
+
+.visible {
+  top: 0;
+}
+
+.hidden {
+  top: -100px; /* Adjust this value to the height of your navbar */
+}
+
+
+/* SocialBar css */
+
+.socialBar{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: whitesmoke;
+  text-decoration: none;
+  list-style: none;
+  width: 5dvw;
+  height: 100dvh;
+  margin: 2dvh 0dvh 0dvh 0dvh;
+  z-index: 1;
+  background-color: var(--background-color);
+  top: 0;
+}
+.socialContainer ul li{
+  list-style: none;
+  gap: 30px;
+  line-height: 50px;
+}
+.github, .twitter, .instagram, .linkedin{
+  color: whitesmoke;
+  transition: color 0.5 ease-in-out;
+  font-size: 1.3rem;
+}
+.github:hover{
+  color: rgb(67,124,205) ;
+  transform: translate(0px, -2px);
+  transition: transform 0.3s ease-in-out;
+} .twitter:hover{
+  color: rgb(69, 214, 202);
+  transform: translate(0px, -2px);
+  transition: transform 0.3s ease-in-out;
+} .instagram:hover{
+  color: rgb(75, 195, 213);
+  transform: translate(0px, -2px);
+  transition: transform 0.3s ease-in-out;
+} .linkedin:hover {
+  color:rgb(82, 182, 255);
+  transform: translate(0px, -2px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.imgContainer{
+  display: flex;
+  justify-content: center;
+}
+.imgContainer:hover {
+  cursor: pointer;
+  transform: translate(-5px, -5px);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Introduction */
+.introduction{
+  padding: 30dvh 25dvw 10dvw 25dvw;
+  display: flex;
+  flex-direction: column;
+  width: 40dvw;
+}
+  .introduction h1{
+    color:whitesmoke ;
+    font-size: 2rem;
+    margin: 10px;
+}
+.introduction h2{
+    background: linear-gradient(to right, rgb(67,124,205), rgb(69, 214, 202));
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.5rem;
+    margin: 10px;
+}
+.introduction h3{
+    color: whitesmoke;
+    font-size: 2rem;
+    margin: 10px;
+}
+.introduction p{
+    color: whitesmoke;
+    font-size: 1.4rem;
+    text-align: justify;
+    margin: 10px;
+    width: 90%;
+}
+
+/* About Me */
+
+.aboutMe{
+  display: flex;
+  flex-direction: row;
+  margin: 35dvh 25dvw 0dvh 25dvw;
+}
+.aboutContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 60px 0px 0px;
+}
+
+.aboutContainer h2{
+  background: var(--gradiantColor);
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.aboutContainer p{
+  text-align: justify;
+}
+.imgContainer-aboutMe img{
+  object-fit: cover;
+  width: 15dvw;
+  height: 100%;
+  border-radius: 10px;
+}
+.hard-skills ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px; 
+  list-style: none; 
+  padding: 0px;
+}
+
+.hard-skills li {
+  cursor: pointer;
+  max-width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid whitesmoke;
+  padding: 10px; 
+  border-radius: 15px; 
+  transition: 0.1s ease-in-out;
+}
+
+.hard-skills li:hover{
+  border: 2px solid white;
+  background-color:  rgba(110, 110, 112, 0.308)
+}
+
+/* Project Container */
+
+.projectContainer{
+  height: 100dvh;
+  margin: 30dvh 25dvw 0dvw 25dvw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project h2{
+  margin-bottom: 50px;
+  font-size: 3rem;
+  background: var(--gradiantColor);
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-fill-color: transparent;
+}
+.projectImage{
+width: 30dvw;
+height: 30dvh;
+object-fit: cover;
+}
+.project p{
+  text-align: justify ;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.skills{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.skills li{
+  border: 2px solid whitesmoke;
+  padding: 10px;
+  border-radius: 15px;
+}
+.skills li:hover{
+  cursor: pointer;
+  border: 2px solid white;
+  background-color:  rgba(110, 110, 112, 0.308)
+
+}
+.slideButton{
+  height: 20px;
+  background-color: transparent;
+  color: whitesmoke;
+  border: none;
+  font-size: 2rem;
+  padding: 20px;
+}
+.slideButton:hover{
+  color: rgb(67,124,205) ;
+  transform: translate(0px, -2px);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+/* Contact me */
+
+.ContactMe{
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  margin: 10dvh 25dvw 5dvh 25dvw;
+  align-items: center;
+}
+.ContactMe h2{
+  background: var(--gradiantColor);
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+}
+.ContactMe p{
+  padding: 0px 5dvw 5dvh 5dvw;
+  text-align: justify;
+  font-size: 1.2rem;
+
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 30px;
+  background-color: var(--background-color);
+  
+}
+.form input{
+  width: 20dvw;
+  height: 3dvh;
+}
+.form textarea{
+  width: 20dvw;
+  height: 9dvh;
+}
+
+.sendButton {
+  padding: 10px 20px;
+  background-image: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202)), linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
+  border: none;
+  box-sizing: border-box;
+  border-radius: 50px;
+  position: relative;
+  z-index: 1;
+  font-size: 1.2rem;
+  color: whitesmoke;
+  cursor: pointer;
+  outline: none;
+  background-clip: padding-box;
+}
+
+.sendButton:hover {
+  background-image: linear-gradient(to right, rgb(69, 214, 202), rgb(67, 124, 205)), linear-gradient(to right, rgb(69, 214, 202), rgb(67, 124, 205));
+}
