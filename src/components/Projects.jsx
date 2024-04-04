@@ -11,7 +11,7 @@ export default function Projects() {
     },
     {
       name: "Portfolio v2",
-      imageUrl: "https://res-console.cloudinary.com/dqknxcs3x/media_explorer_thumbnails/94efde1c4ae2a67408306e54e803730c/detailed",
+      imageUrl: "https://res-console.cloudinary.com/dqknxcs3x/media_explorer_thumbnails/943fae5d7d0e8cf370495940f3027dba/detailed",
       functionality: "This version of my portfolio builds upon the original's design while significantly enhancing user experience. With React at its core, it features optimized navigation, improved load times, and dynamic, interactive elements, all woven into the design's original aesthetic. The update focuses on refined CSS for fluid transitions and better responsiveness, demonstrating my commitment to creating an engaging, accessible online presence. This iteration showcases my ability to innovate while respecting foundational design principles.",
       technologies: ["React", "CSS", "Express.js"]
     },
