@@ -29,7 +29,7 @@ export default function AboutMe() {
         </div>
         </div>
         <div className='imgContainer-aboutMe'>
-            <img src="../images/Screenshot_2023-11-13-10-18-10-560_com.miui.gallery.jpg" alt="" />
+            <img src="../images/photo-of-me" alt="" />
 
         </div>
     </div>
