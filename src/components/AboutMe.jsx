@@ -29,7 +29,7 @@ export default function AboutMe() {
         </div>
         </div>
         <div className='imgContainer-aboutMe'>
-            <img src="../images/photo-of-me" alt="" />
+            <img src="../images/photo-of-me.jpg" alt="" />
 
         </div>
     </div>
