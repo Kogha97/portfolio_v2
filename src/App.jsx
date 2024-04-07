@@ -9,6 +9,7 @@ import ContactMe from './components/ContactMe'
 export default function App() {
   return (
     <>
+
       <Navbar/>
       <SocialBar/>
       <div id="introduction"><Introduction/></div>
