@@ -11,7 +11,7 @@ html, body {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-
+  overflow-x: hidden;
 }
 :root{
   --gradiantColor : linear-gradient(to right, rgb(67,124,205), rgb(69, 214, 202));
@@ -86,7 +86,7 @@ html, body {
   color: whitesmoke;
   text-decoration: none;
   list-style: none;
-  width: 5dvw;
+  width: 50px;
   height: 100dvh;
   padding: 1dvh 0dvh 0dvh 0dvh;
   z-index: 1;
@@ -264,11 +264,17 @@ object-fit: fill;
   flex-direction: row;
   gap: 30px;
 }
-.skills li{
+.skills li {
+  min-width: 90px; /* Example min-width */
+  min-height: 35px; /* Example min-height */
   border: 2px solid whitesmoke;
-  padding: 10px;
+  padding: 5px;
   border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .skills li:hover{
   cursor: pointer;
   border: 2px solid white;
@@ -599,6 +605,13 @@ object-fit: fill;
     line-height: 1.5rem;
   }
 }
+
+
+
+
+
+
+
 /* hamburger button */
 @media(max-width: 768px){
   .navbar{
@@ -633,7 +646,7 @@ object-fit: fill;
     z-index: 2;
     cursor: pointer;
     position: absolute;
-    left: 80dvw;
+    left: 85dvw;
     top: 20px;
 }
 .hamburger-menu:has(input:checked) {
@@ -694,8 +707,9 @@ header{
     min-width: 25dvw;
     min-height: 30dvh;
     z-index: 1;
-    right: 10px;
+    right: 20px;
 }
+
 
 .sidebar .navbar-hamburger ul {
   position: inherit;
@@ -705,6 +719,7 @@ header{
     padding-top: 20px;
     padding-right: 5px;
     list-style: none;
+
     gap: 20px;
 }
 .sidebar .navbar-hamburger ul li a:hover{
@@ -719,7 +734,10 @@ header{
 }     
 .hamburger-menu:has(input:checked) + .sidebar {
     /* transform: translateX(0); */
-    display: block;
+    display: inline;
+}
+#root > div.navbar-smallscreen > aside > nav > ul{
+  margin: 0px 0px 0px 0px;
 }
 
 
@@ -740,7 +758,7 @@ header{
 }
 .project h2{
   margin-bottom: 50px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   background: var(--gradiantColor);
   -webkit-background-clip: text;
   background-clip: none;
@@ -754,20 +772,23 @@ object-fit: fill;
 .project p{
   text-align: justify ;
   max-width: 70dvw;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.4rem;
 }
 .skills{
   list-style: none;
   display: grid;
-grid-template-columns: repeat(3,1fr);
-  gap: 30px;
+  grid-template-columns: repeat(3,1fr);
+  justify-items: center;
+  padding: 10px;
+  gap: 20px;
 }
 .skills li{
   border: 2px solid whitesmoke;
-  padding: 10px;
+  padding: 5px;
   border-radius: 15px;
 }
+
 .skills li:hover{
   cursor: pointer;
   border: 2px solid white;
@@ -780,7 +801,7 @@ grid-template-columns: repeat(3,1fr);
   color: whitesmoke;
   border: none;
   font-size: 1.5rem;
-  padding: 20px;
+  padding: 0px 10px 0px 10px;
 }
 .slideButton:hover{
   color: rgb(67,124,205) ;
@@ -802,4 +823,80 @@ grid-template-columns: repeat(3,1fr);
 #contactMe{
   width: 95dvw;
 }
+}
+
+@media(max-width: 480px){
+  .socialBar{
+    min-width: 30px;
+  }
+  #introduciton{
+    width: 100dvw;
+  }
+  .introduction{
+    width: 80%;
+   padding:  35dvh 5dvw 10dvw 15dvw;
+  }
+  .introduction h1, .introduction h2, .introduction h3, .introduction p{
+    margin: 0px 0px 10px 0px;
+  }
+  .aboutMe{
+    padding: 5dvh 1dvw 0dvh 13dvw;
+    width: 100%;
+  }
+  .aboutContainer{
+    width: 85%;
+  }
+  .hard-skills ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    z-index: 2;
+  }
+  #projects{
+    margin: 0px 0px 0px 10dvw;
+  }
+  .projectContainer{
+    width: 100%;
+    padding: 0px;
+  }
+  .project{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+  }
+  #projects > div > button{
+    padding: 0px;
+    z-index: 2;
+  }
+
+  .functionality{
+    font-size: 13px;
+    margin: 0;
+  }
+  .skills{
+    margin: 0px;
+    z-index: 2;
+    grid-template-columns: repeat(2,1fr);
+  }
+  #projects > div > button:nth-child(14){
+    margin: 0px;
+    padding: 0px;
+  }
+  #projects > div > div.slide.active{
+    width: 90%;
+  }
+  .ContactMe{
+    padding: 10dvh 0px 5dvh 7dvw;;
+  }
+  .ContactMe h2{
+    font-size: 1.7rem;
+  }
+  .form input{
+    width: 50dvw;
+    height: 3dvh;
+  }
+  .form textarea{
+    width: 50dvw;
+    height: 9dvh;
+  }
 }
