@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
+import { scroller } from 'react-scroll'
 
 export default function Navbar() {
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
@@ -21,7 +22,7 @@ export default function Navbar() {
     <>
     <div className={`navbar ${visible ? 'visible' : 'hidden'}`}>
         <ul>
-            <li><Link to="introduction" smooth={true} duration={500}>Home</Link></li>
+            <li><Link to="introduction"smooth={true} duration={500}>Home</Link></li>
             <li><Link to="aboutMe" smooth={true} duration={500}>About Me</Link></li>
             <li><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
             <li><Link to="contactMe" smooth={true} duration={500}>Contact Me</Link></li>
