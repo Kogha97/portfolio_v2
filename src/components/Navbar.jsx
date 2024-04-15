@@ -26,7 +26,7 @@ export default function Navbar() {
             <li><Link to="aboutMe" smooth={true} duration={500}>About Me</Link></li>
             <li><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
             <li><Link to="contactMe" smooth={true} duration={500}>Contact Me</Link></li>
-            <li><a href="../João_Augusto_-_Full_Stack_Developer.pdf" download="Joao_Augusto_Full_Stack_Developer_CV.pdf">Resume</a></li>
+            <li><a href="/João_Augusto_-_Full_Stack_Developer.pdf" download="Joao_Augusto_Full_Stack_Developer_CV.pdf">Resume</a></li>
         </ul>
     </div>
     <div className='navbar-smallscreen'>
