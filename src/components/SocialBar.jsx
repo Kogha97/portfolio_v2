@@ -30,7 +30,7 @@ export default function SocialBar() {
                 <li><a href="https://www.instagram.com/joao.m.augusto/" target="_blank">
                     <FontAwesomeIcon icon={faInstagram} className='instagram'/></a>
                 </li>
-                <li><a href="https://www.linkedin.com/in/joao-augusto-25634b224/" target="_blank">
+                <li><a href="https://www.linkedin.com/in/joao-augusto-uk/" target="_blank">
                     <FontAwesomeIcon icon={faLinkedinIn} className='linkedin' /></a>
                 </li>
             </ul>
