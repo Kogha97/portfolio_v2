@@ -35,7 +35,7 @@ export default function Projects() {
     },    
     {
       name:'What is my Ip Adress',
-      imageUrl:'https://asset.cloudinary.com/dqknxcs3x/696a02f0efd7962d43778c6cc232f778',
+      imageUrl:'https://res.cloudinary.com/dqknxcs3x/image/upload/fl_preserve_transparency/v1712224604/portfolio/lipjcgo27rxjr8s0dds2.jpg?_s=public-apps',
       functionality: "A web application that provides users with their current IP address and geographical location information, built using React and styled with CSS. It leverages the Leaflet library for rendering an interactive map that visually displays the user's location based on their IP address. This project highlights my ability to integrate external APIs for real-time data retrieval and my skills in creating user-friendly, informative web tools.",
       technologies:['React','CSS','Leaflet', 'GitHub']
     },
