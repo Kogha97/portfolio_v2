@@ -29,7 +29,7 @@ export default function AboutMe() {
         </div>
         </div>
         <div className='imgContainer-aboutMe'>
-            <img src="https://res-console.cloudinary.com/dqknxcs3x/media_explorer_thumbnails/cfdb573c7c807e4fa2fb79e025f5a30c/detailed" alt="" />
+            <img src="https://asset.cloudinary.com/dqknxcs3x/696a02f0efd7962d43778c6cc232f778" alt="" />
 
         </div>
     </div>
