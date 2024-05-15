@@ -10,13 +10,13 @@ export default function Introduction() {
       strings: [
         'João Augusto.'
       ],
-      typeSpeed: 50,
-      backSpeed: 50,
+      typeSpeed: 45,
+      backSpeed: 45,
       showCursor: true,
       cursorChar: '|',
       loop: false
     };
-    
+
     typed.current = new Typed(el.current, options);
 
     return () => {
@@ -30,7 +30,7 @@ export default function Introduction() {
       <h1>Hi, my name is</h1>
       <h2><span ref={el}></span></h2>
       <h3>I craft digital solutions for the online realm.</h3>
-      <p>I am a new and excited Full Stack Web & App Developer, looking to emerge myself into the world of technology, ready to adapt, learn, and create a digital Paragon. I cannot wait for this new adventure!</p>
+      <p>I am a new and excited Full Stack Web & App Developer, looking to emerge myself into the world of technology, ready to adapt, learn, and create a digital Paragon. I can not wait for this new adventure!</p>
     </div>
   );
 }
