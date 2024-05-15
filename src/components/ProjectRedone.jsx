@@ -102,42 +102,61 @@ export default function Projects() {
     },
 
   ];
+  const [selectedTechs, setSelectedTechs] = useState([])
 
-  const [current, setCurrent] = useState(0);
-  const length = projects.length; 
-
-  const nextSlide = () => {
-      setCurrent(current === length - 1 ? 0 : current + 1); 
-  };
-
-  const prevSlide = () => {
-      setCurrent(current === 0 ? length - 1 : current - 1);
-  };
-
-  if (projects.length <= 0) { 
-      return null;
+  const handleTechSelect = (tech) => {
+    if(selectedTechs.includes(tech)) {
+      setSelectedTechs(selectedTechs.filter(t => t !== tech))
+    } else {
+      setSelectedTechs([...selectedTechs, tech])
+    }
   }
+  
+  const filteredProjects = selectedTechs.length > 0
+    ? projects.filter(project => selectedTechs.every(tech => project.technologies.includes(tech)))
+    : projects;
 
-  return (
-    <div className='projectContainer'>
-        <button className='slideButton' onClick={prevSlide}>&lt;</button>
-        {projects.map((project, index) => (
-            <div className={index === current ? 'slide active' : 'slide'} key={index}>
-                {index === current && (
-                    <div className='project'>
-                        <h2>{project.name}</h2>
-                        <img className='projectImage' src={project.imageUrl} alt={project.name} />
-                        <p className='functionality'>{project.functionality}</p>
-                        <ul className='skills'>
-                            {project.technologies.map((tech, techIndex) => ( 
-                                <li key={techIndex}>{tech}</li>
-                            ))}
-                        </ul>
-                    </div>
-                )}
-            </div>
-        ))}
-        <button className='slideButton' onClick={nextSlide}>&gt;</button>
+  const ProjectCard = ({ project }) => (
+    <div className="projectCard">
+      <img src={project.imageUrl} alt={project.name} />
+      <div className="cardHover">
+        <h3>{project.name}</h3>
+        <p>{project.functionality}</p>
+        <a href={project.url} target="_blank" rel="noopener noreferrer">Visit Site</a>
+        <a href={project.github} target="_blank" rel="noopener noreferrer">View Code</a>
+      </div>
     </div>
   );
+  
+  return (
+    <div className='projectContainer'>
+      <div className="techFilters">
+        {["React", "CSS", "Express.js", "MongoDB", "Next.js", "Tailwind"] // Add or modify based on your actual technologies
+          .map((tech, index) => (
+            <button key={index} onClick={() => handleTechSelect(tech)}
+              className={selectedTechs.includes(tech) ? "selected" : ""}>
+              {tech}
+            </button>
+          ))
+        }
+      </div>
+      <div className="projectGrid">
+        {filteredProjects.map((project, index) => (
+          <div className="projectCard" key={index}>
+            <img src={project.imageUrl} alt={project.name} />
+            <div className="cardOverlay">
+              <div className="cardDetails">
+                <h3>{project.name}</h3>
+                <p>{project.functionality}</p>
+                <a href={project.url} target="_blank" rel="noopener noreferrer" className="cardLink">Visit Site</a>
+                <a href={project.github} target="_blank" rel="noopener noreferrer" className="cardLink">View Code</a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+  
 }
+ 
