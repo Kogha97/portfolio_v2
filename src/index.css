@@ -294,19 +294,19 @@ html, body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.719);
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease;
   text-align: center;
 }
 
 .projectCard:hover .cardOverlay {
-  opacity: 1;
+  opacity: 2;
 }
 
 .projectCard:hover img {
@@ -319,6 +319,7 @@ html, body {
 
 .cardDetails p {
   padding: 0 20px;
+  text-align: justify;
 }
 
 .cardLink {
@@ -907,7 +908,6 @@ object-fit: fill;
   font-size: 1.8rem;
 }
 }
-/* 
 
 
 
@@ -919,7 +919,6 @@ object-fit: fill;
 
 
 
-*/
 @media(max-width: 480px){
   .socialBar{
     min-width: 30px;
@@ -1054,4 +1053,14 @@ object-fit: fill;
   .techFilters {
     justify-content: start; 
   }
+}
+
+
+.UnderConstructionContainer{
+  display: flex;
+  min-height: 100dvh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }

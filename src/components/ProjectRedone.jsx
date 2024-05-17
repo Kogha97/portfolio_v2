@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ProjectCard from './ProjectCard';
 
 export default function Projects() {
 
@@ -116,22 +117,11 @@ export default function Projects() {
     ? projects.filter(project => selectedTechs.every(tech => project.technologies.includes(tech)))
     : projects;
 
-  const ProjectCard = ({ project }) => (
-    <div className="projectCard">
-      <img src={project.imageUrl} alt={project.name} />
-      <div className="cardHover">
-        <h3>{project.name}</h3>
-        <p>{project.functionality}</p>
-        <a href={project.url} target="_blank" rel="noopener noreferrer">Visit Site</a>
-        <a href={project.github} target="_blank" rel="noopener noreferrer">View Code</a>
-      </div>
-    </div>
-  );
   
   return (
     <div className='projectContainer'>
       <div className="techFilters">
-        {["React", "CSS", "Express.js", "MongoDB", "Next.js", "Tailwind"] // Add or modify based on your actual technologies
+        {["React", "Next.js", "CSS", "Tailwind", "Express.js", "MongoDB"]
           .map((tech, index) => (
             <button key={index} onClick={() => handleTechSelect(tech)}
               className={selectedTechs.includes(tech) ? "selected" : ""}>
@@ -142,21 +132,9 @@ export default function Projects() {
       </div>
       <div className="projectGrid">
         {filteredProjects.map((project, index) => (
-          <div className="projectCard" key={index}>
-            <img src={project.imageUrl} alt={project.name} />
-            <div className="cardOverlay">
-              <div className="cardDetails">
-                <h3>{project.name}</h3>
-                <p>{project.functionality}</p>
-                <a href={project.url} target="_blank" rel="noopener noreferrer" className="cardLink">Visit Site</a>
-                <a href={project.github} target="_blank" rel="noopener noreferrer" className="cardLink">View Code</a>
-              </div>
-            </div>
-          </div>
+          <ProjectCard project={project} key={index} />
         ))}
       </div>
     </div>
   );
-  
 }
- 
