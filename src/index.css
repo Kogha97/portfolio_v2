@@ -1069,7 +1069,8 @@ object-fit: fill;
 }
 @media(max-width: 500px){
   .under-construction-container{
-    font-size: 0.9rem;
+    margin: 5dvw;
+    font-size: 0.8rem;
   }
 }
 @keyframes hammering {
