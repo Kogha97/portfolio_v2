@@ -12,16 +12,8 @@ export default function UnderConstruction() {
         This project is still under construction   <FontAwesomeIcon icon={faHammer} className="hammer-icon" />
       </h2>
       <h2>
-        <a
-          href="/"
-          onClick={(e) => {
-            e.preventDefault();
-            navigate('/');
-          }}
-          className="go-back-link"
-        >
-          Click here
-        </a> to go back.
+        <a href="/" onClick={(e) => {e.preventDefault(); navigate('/');}}
+          className="go-back-link">Click here</a>to go back.
       </h2>
     </div>
   );
