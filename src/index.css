@@ -1065,11 +1065,11 @@ object-fit: fill;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  z-index: 2;
+  z-index: 3;
 }
 @media(max-width: 500px){
   .under-construction-container{
-    margin: 5dvw;
+    padding: 4dvw;
     font-size: 0.8rem;
   }
 }
