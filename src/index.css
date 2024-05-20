@@ -1022,7 +1022,7 @@ object-fit: fill;
 }
 
 /* small creen projects */
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .projectGrid {
     grid-template-columns: repeat(2, 1fr); 
     margin-bottom: 200px;
@@ -1048,6 +1048,7 @@ object-fit: fill;
 @media (max-width: 500px) {
   .projectGrid {
     grid-template-columns: 1fr; 
+    margin: 0px 0px 0px 5dvw;
   }
 
   .techFilters {
@@ -1056,11 +1057,44 @@ object-fit: fill;
 }
 
 
-.UnderConstructionContainer{
+.under-construction-container{
   display: flex;
   min-height: 100dvh;
-  width: 100%;
+  padding-left: 5dvw;
+  width: 95dvw;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: 2;
+}
+@media(max-width: 500px){
+  .under-construction-container{
+    font-size: 0.9rem;
+  }
+}
+@keyframes hammering {
+  0% {
+    transform: rotate(20);
+  }
+  20% {
+    transform: rotate(-40deg);
+  }
+  40% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-40deg);
+  }
+  80% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(20);
+  }
+}
+
+.hammer-icon {
+  display: inline-block;
+  animation: hammering 1.4s infinite;
+  transform-origin: top left; /* Adjust as necessary to pivot from the correct point */
 }
