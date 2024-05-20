@@ -179,6 +179,8 @@ html, body {
 /* About Me */
 
 .aboutMe{
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: row;
   padding: 35dvh 25dvw 0dvh 25dvw;
@@ -472,12 +474,12 @@ html, body {
   display: flex;
   flex-direction: row;
   padding: 5dvh 1dvw 0dvh 10dvw;
-  height: 100dvh;
+  min-height: 100dvh;
 }
 .aboutContainer{
   display: flex;
   flex-direction: column;
-  padding: 0px 60px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 .aboutContainer h2{
@@ -934,11 +936,11 @@ object-fit: fill;
     margin: 0px 0px 10px 0px;
   }
   .aboutMe{
-    padding: 5dvh 3dvw 0dvh 12dvw;
-    width: 100%;
+
+    width: 85%;
   }
   .aboutContainer{
-    width: 85%;
+    width: 100%;
   }
   .hard-skills ul{
     display: grid;
@@ -1046,6 +1048,18 @@ object-fit: fill;
 }
 
 @media (max-width: 500px) {
+  .introduction h1{
+    font-size: 1.5rem;
+  }
+  .introduction h2{
+    font-size: 2.8rem;
+  }
+  .introduction h3{
+    font-size: 1.5rem;
+  }
+  .introduction p {
+    font-size: 1rem;
+  }
   .projectGrid {
     grid-template-columns: 1fr; 
     margin: 0px 0px 0px 5dvw;
