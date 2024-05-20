@@ -1049,10 +1049,15 @@ object-fit: fill;
   .projectGrid {
     grid-template-columns: 1fr; 
     margin: 0px 0px 0px 5dvw;
+    z-index: 2;
   }
 
   .techFilters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: start; 
+
+    padding-left: 5dvw;
   }
 }
 
