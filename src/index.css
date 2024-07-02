@@ -343,11 +343,12 @@ html, body {
 /* Contact me */
 
 .ContactMe{
-  height: 100dvh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   padding: 10dvh 25dvw 5dvh 25dvw;
   align-items: center;
+  z-index: 2;
 }
 .ContactMe h2{
   background: var(--gradiantColor);
@@ -355,6 +356,7 @@ html, body {
   background-clip: none;
   -webkit-text-fill-color: transparent;
   font-size: 2.5rem;
+
 }
 .ContactMe p{
   padding: 0px 5dvw 5dvh 5dvw;
@@ -597,7 +599,7 @@ object-fit: fill;
 
 
 .ContactMe{
-  height: 100dvh;
+
   display: flex;
   flex-direction: column;
   padding: 10dvh 15dvw 5dvh 15dvw;
@@ -982,10 +984,10 @@ object-fit: fill;
     width: 90%;
   }
   .ContactMe{
-    padding: 10dvh 0px 5dvh 7dvw;;
+    padding: 10dvh 0px 5dvh 13dvw;;
   }
   .ContactMe h2{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   .form input{
     width: 50dvw;
