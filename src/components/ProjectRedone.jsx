@@ -5,6 +5,15 @@ export default function Projects() {
 
   const projects = [
     {
+      name:'Catering By Pintxos',
+      imageUrl:'https://res.cloudinary.com/dqknxcs3x/image/upload/v1730992702/portfolio/0_bbaex9.png',
+      functionality:"A Next.js-based catering website that delivers a visually engaging user experience, featuring smooth navigation, dynamic content sections, and interactive elements. The design incorporates responsive layouts and mobile-friendly functionality to ensure accessibility across all devices. Key elements include a custom video banner, optimized image loading, and a quote request feature that allows clients to easily connect with the business.",
+      technologies:['Next.js','CSS','GitHub'],
+      url:'https://catering-by-pintxos.vercel.app/',
+      github:'https://github.com/Kogha97/catering_by-_pintxos'
+
+    },
+    {
       name:'Budgeting app',
       imageUrl:'https://res.cloudinary.com/dqknxcs3x/image/upload/fl_preserve_transparency/v1712224603/portfolio/hfkwtbjtp7ec9ef0ccxg.jpg?_s=public-apps',
       functionality:"A React-based budgeting tool that securely syncs with bank accounts to track expenses and manage finances. It features robust security measures for safe data fetching and transaction management, utilizing Express.js and MongoDB for backend operations, and OAuth for secure authentication. This project highlights my ability to integrate high-security standards in web applications, ensuring user data protection while providing a comprehensive financial overview.",
