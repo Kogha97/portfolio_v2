@@ -39,7 +39,7 @@ html, body {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  
+  z-index: 2;
 }
 .navbar ul li, .navbar ul li a{
   text-decoration: none;
