@@ -6,7 +6,7 @@ export default function Projects() {
   const projects = [
     {
       name:'Catering By Pintxos',
-      imageUrl:'https://res.cloudinary.com/dqknxcs3x/image/upload/v1730992702/portfolio/0_bbaex9.png',
+      imageUrl:'https://res.cloudinary.com/dqknxcs3x/image/upload/v1731763380/portfolio/pintxos_website_xcfqfx.jpg',
       functionality:"A Next.js-based catering website that delivers a visually engaging user experience, featuring smooth navigation, dynamic content sections, and interactive elements. The design incorporates responsive layouts and mobile-friendly functionality to ensure accessibility across all devices. Key elements include a custom video banner, optimized image loading, and a quote request feature that allows clients to easily connect with the business.",
       technologies:['Next.js','CSS','GitHub'],
       url:'https://catering-by-pintxos.vercel.app/',
