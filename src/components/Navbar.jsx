@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';  // Use ScrollLink for within-page navigation
-import { Link as RouterLink } from 'react-router-dom';  // Use RouterLink for page routing
+
 
 export default function Navbar() {
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
@@ -28,7 +28,7 @@ export default function Navbar() {
             <li><ScrollLink to="aboutMe" smooth={true} duration={500}>About Me</ScrollLink></li>
             <li><ScrollLink to="projectContainer" smooth={true} duration={500}>Projects</ScrollLink></li>
             <li><ScrollLink to="ContactMe" smooth={true} duration={500}>Contact Me</ScrollLink></li>
-            <li><a href="/Joao_Augusto_CV.pdf" download="Joao_Augusto_Full_Stack_Developer_CV.pdf">Resume</a></li>
+            <li><a href="/Joao_Augusto_CV.pdf" download="Joao_Augusto_Software_Developer">Resume</a></li>
         </ul>
       </div>
       <div className='navbar-smallscreen'>
