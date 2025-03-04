@@ -9,7 +9,7 @@ export default function Experience() {
       {
         title: 'Software Developer (Internship)',
         company: 'Digidom',
-        period: 'November 2024 - February 2025',
+        period: 'December 2024 - February 2025',
         description: 'I developed an app that generated service calls for field engineers, streamlining dispatch and ensuring timely responses.',
       },
     ];
