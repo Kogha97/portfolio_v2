@@ -1,4 +1,9 @@
+// import { useState } from "react";
+
 export default function Experience() {
+
+// const [visible, setVisible] = useState(false)
+
     const timelineData = [
       {
         title: 'Full-Stack Developer',

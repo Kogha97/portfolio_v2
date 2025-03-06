@@ -44,7 +44,7 @@ export default function Navbar() {
               <li><ScrollLink to='myexperience' smooth={true} duration={500}>Experience</ScrollLink></li>
               <li><ScrollLink to="projectContainer" smooth={true} duration={500}>Projects</ScrollLink></li>
               <li><ScrollLink to="ContactMe" smooth={true} duration={500}>Contact Me</ScrollLink></li>
-              <li><a href="/João_Augusto_CV.pdf" download="Joao_Augusto_Full_Stack_Developer_CV.pdf">Resume</a></li>
+              <li><a href="/Joao_Augusto_CV.pdf" download="Joao_Augusto_Software_Developer">Resume</a></li>
             </ul>
           </nav>
         </aside>
