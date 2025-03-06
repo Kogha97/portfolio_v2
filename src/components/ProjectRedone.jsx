@@ -94,15 +94,15 @@ export default function Projects() {
       url:'https://kogha97.github.io/ToDoList/',
       github: 'https://github.com/Kogha97/ToDoList'
     },
-    {
-      name:'Cooking with Tayfun & João',
-      imageUrl:'https://res.cloudinary.com/dqknxcs3x/image/upload/fl_preserve_transparency/v1712224603/portfolio/a4vt5kpiltqmjsjgzpdd.jpg?_s=public-apps',
-      functionality:'In my cooking book project using HTML and CSS, I learned valuable skills in organization, planning for responsiveness, and creating CSS-only hamburger menus. This project deepened my understanding of web development and showcased my proficiency in crafting interactive elements without JavaScript.',
-      technologies:['HTML','CSS','GitHub'],
-      url:'https://wbs-cook-book.vercel.app/',
-      github:'https://github.com/Kogha97/wbs-cook-book'
-    },
-    {
+    // {
+    //   name:'Cooking with Tayfun & João',
+    //   imageUrl:'https://res.cloudinary.com/dqknxcs3x/image/upload/fl_preserve_transparency/v1712224603/portfolio/a4vt5kpiltqmjsjgzpdd.jpg?_s=public-apps',
+    //   functionality:'In my cooking book project using HTML and CSS, I learned valuable skills in organization, planning for responsiveness, and creating CSS-only hamburger menus. This project deepened my understanding of web development and showcased my proficiency in crafting interactive elements without JavaScript.',
+    //   technologies:['HTML','CSS','GitHub'],
+    //   url:'https://wbs-cook-book.vercel.app/',
+    //   github:'https://github.com/Kogha97/wbs-cook-book'
+    // },
+     {
       name: 'Lorem Impsum Website',
       imageUrl:'https://res.cloudinary.com/dqknxcs3x/image/upload/fl_preserve_transparency/v1712224603/portfolio/ujbz1bkcksxotxafxpd7.jpg?_s=public-apps',
       functionality:'This was my first ever project, to recreate a already made website, with this project I learned a lot a valuable skills and worked on the basics of HTML and CSS, such has padding, backgound images, flexbox and grid containers.',

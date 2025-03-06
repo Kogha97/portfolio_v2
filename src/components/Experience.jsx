@@ -30,6 +30,7 @@ export default function Experience() {
   
     return (
         <>
+        <div className="myexperience">
         <div className="experience-header">
             <h1>My Experience</h1>
         </div>
@@ -38,6 +39,7 @@ export default function Experience() {
         {timelineData.map((item, index) => (
           <TimelineItem key={index} item={item} index={index} />
         ))}
+      </div>
       </div>
       </>
     );

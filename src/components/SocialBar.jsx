@@ -26,7 +26,7 @@ export default function SocialBar() {
                 <li><a href="https://twitter.com" target='_blank'>
                     <FontAwesomeIcon icon={faXTwitter} className='twitter'/></a>
                 </li>
-                <li><a href="https://www.instagram.com/joao.m.augusto/" target="_blank">
+                <li><a href="https://www.instagram.com/j.fitness.official/" target="_blank">
                     <FontAwesomeIcon icon={faInstagram} className='instagram'/></a>
                 </li>
                 <li><a href="https://www.linkedin.com/in/joao-augusto-uk/" target="_blank">
