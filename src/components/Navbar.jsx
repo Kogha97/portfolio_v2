@@ -29,7 +29,7 @@ export default function Navbar() {
             <li><ScrollLink to='myexperience' smooth={true} duration={500}>Experience</ScrollLink></li>
             <li><ScrollLink to="projectContainer" smooth={true} duration={500}>Projects</ScrollLink></li>
             <li><ScrollLink to="ContactMe" smooth={true} duration={500}>Contact Me</ScrollLink></li>
-            <li><a href="/Joao_Augusto_Cv.pdf.pdf" download="Joao_Augusto_CV">Resume</a></li>
+            <li><a href="/Joao_Augusto_Cv.pdf" download="Joao_Augusto_CV">Resume</a></li>
         </ul>
       </div>
       <div className='navbar-smallscreen'>
